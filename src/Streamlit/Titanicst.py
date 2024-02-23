@@ -20,7 +20,7 @@ fig1, ax = plt.subplots()
 df["Survived"].plot(kind = "hist", bins = 2, rwidth = 0.7, color = (.13, .02, .24) )
 plt.xticks([.25, 0.75], ["Muertos", "Vivos"])
 plt.close(fig1)
-
+ax.set_facecolor('black')
 st.pyplot(fig1)
 
 st.header("Clases")
