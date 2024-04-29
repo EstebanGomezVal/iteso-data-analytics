@@ -1,3 +1,8 @@
 pandas
 seaborn
 matplotlib
+numpy
+category_encoders
+sklearn.model_selection
+sklearn.linear_model
+sklearn.preprocessing
