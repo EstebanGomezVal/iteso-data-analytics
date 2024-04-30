@@ -180,9 +180,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.2, rand
 
 st.markdown('A partir de ello se utilizaron métodos con el fin de verificar que tan preciso es el modelo predictivo que se creó:')
 
-st.markdown('Utilizando Linear Regression se obtuvo una calificación de 0.527020718017648')
-st.markdown('Utilizando KNeighbors Classifier se obtuvo una calificación de 0.824390243902439')
-st.markdown('Utilizando Logistic Regression se obtuvo una calificación de 0.8609756097560975')
+st.markdown('Utilizando Linear Regression se obtuvo una calificación de 0.6139830639438726')
+st.markdown('Utilizando KNeighbors Classifier se obtuvo una calificación de 0.8682926829268293')
+st.markdown('Utilizando Logistic Regression se obtuvo una calificación de 0.8829268292682927')
 
 st.subheader('KMeans')
 st.markdown('Mediante la gráfica de codo, buscamos la mejor cantidad de clusters para el DataFrame, en este caso utilizaremos 8')
