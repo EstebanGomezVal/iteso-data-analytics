@@ -19,7 +19,7 @@ st.header("Definición del Problema")
 st.markdown("*El propósito de este proyecto es desarrollar un programa para la creación de un modelo predictivo acerca de personas que poseen enfermedad de corazón. En base a ciertas características, el modelo entrenado será capaz de predecir qué personas son probables de adquirir una enfermedad cardíaca, basandose en 13 distintos “features” tales como azúcar en la sangre, anginas inducidas, presión arterial del paciente, entre otras buscando relación entre estas y la posesión de una enfermedad cardiáca.*")
 st.markdown("*Este proyecto se centra en el análisis de datos de múltiples pacientes de diversas edades con el objetivo de reducir los problemas cardíacos en las personas. Se busca analizar varios features del paciente para predecir la probabilidad de que adquiera un problema cardíaco en el futuro, basándose en casos pasados de pacientes con características similares que han sido diagnosticados con enfermedades cardíacas. El propósito principal es concienciar a los pacientes a través de casos pasados para buscar que cuiden su salud y reducir la probabilidad de adquirir problemas cardíacos.*")
 
-data_path = "/Users/egmzvalerio/apps/iteso-data-analytics/src/Streamlit/heart_2.csv"
+data_path = "src/Streamlit/heart_2.csv"
 df = pd.read_csv(data_path)
 st.write(df)
 
