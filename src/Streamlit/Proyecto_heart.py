@@ -216,3 +216,7 @@ plt.scatter(df_centroides[:,0], df_centroides[:,1])
 handles, labels = scatter.legend_elements()
 plt.legend(handles, labels, title = "Clusters")
 st.pyplot()
+
+st.markdown('En conclusión, la creación de este proyecto ha demostrado la utilidad de técnicas de análisis de datos y modelado predictivo para abordar problemas de salud, en particular, la prevención de enfermedades cardíacas. Se ha logrado desarrollar un modelo predictivo capaz de identificar a las personas con mayor riesgo de padecer problemas cardíacos, lo que puede ser una herramienta valiosa para los profesionales de la salud y las personas preocupadas por su bienestar cardiovascular.')
+st.markdown('El análisis exploratorio de reveló interesantes relaciones entre las variables y la presencia de enfermedades cardíacas, destacando la importancia de factores como la presión arterial, los niveles de colesterol y la edad en la predicción del riesgo cardiovascular.')
+st.markdown('En última instancia, este proyecto es una pequeña probada de la capacidad de la ciencia de datos para generar conocimientos significativos y aplicables en el campo de la salud y de cualquier otro, con el potencial de mejorar la calidad de vida y reducir la carga de enfermedades cardiovasculares en la sociedad.')
