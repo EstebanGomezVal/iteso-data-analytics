@@ -157,7 +157,7 @@ scatter2 = ax.scatter(X2[y1 == 1], X1[y1 == 1], label='Con problema cardiaco', c
 ax.legend()
 st.pyplot(fig)
 
-st.markdown('Se puede observar como los pacientes con pendiente descendiente son en su mayoría pacientes sin problema cardíaco, mientras que los que poseen una pendiente constante son más probables a poseer un problema cardíaco.')
+st.markdown('Somos capaces de observar con un mayor thalach, mayor probabilidad existe de que la persona adquiera un problema cardíaco, se puede observar también que con pendiente normal exsiten más personas sin problemas cardíacos, mientras que con una pendiente descendiente existen más personas con probemas cardíacos.')
 
 st.header('Normalización de datos para una predicción')
 st.markdown('Se utilizaron varios métodos como get dummies y standard scaler con el fin de obtener una mejor predicción acerca de que tan probable es que una perosna adquiera o no un problema cardíaco')
