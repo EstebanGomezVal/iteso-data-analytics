@@ -19,7 +19,7 @@ st.header("Definición del Problema")
 st.markdown("*El propósito de este proyecto es desarrollar un programa para la creación de un modelo predictivo acerca de personas que poseen enfermedad de corazón. En base a ciertas características, el modelo entrenado será capaz de predecir qué personas son probables de adquirir una enfermedad cardíaca, basandose en 13 distintos “features” tales como azúcar en la sangre, anginas inducidas, presión arterial del paciente, entre otras buscando relación entre estas y la posesión de una enfermedad cardiáca.*")
 st.markdown("*Este proyecto se centra en el análisis de datos de múltiples pacientes de diversas edades con el objetivo de reducir los problemas cardíacos en las personas. Se busca analizar varios features del paciente para predecir la probabilidad de que adquiera un problema cardíaco en el futuro, basándose en casos pasados de pacientes con características similares que han sido diagnosticados con enfermedades cardíacas. El propósito principal es concienciar a los pacientes a través de casos pasados para buscar que cuiden su salud y reducir la probabilidad de adquirir problemas cardíacos.*")
 
-data_path = "/Users/egmzvalerio/apps/iteso-data-analytics/data/raw/heart 2.csv"
+data_path = "src/Streamlit/heart_2.csv"
 df = pd.read_csv(data_path)
 st.write(df)
 
@@ -115,7 +115,7 @@ st.pyplot()
 
 st.subheader('**Dolor de pecho contra target**')
 st.markdown('Se puede observar como las personas con angina típica son la mayoria pacientes sin riesgo, mientras que en personas sin dolor de angina, angina atípica y asintomáticos, se puede observar como los pacientes con riesgo son mayoría.')
-sns.countplot(x=df['cp'], hue=df['target'].astype(str))
+sns.countplot(x = df['cp'], hue=df['target'].astype(str))
 plt.legend(labels=['Sin riesgo', 'Con riesgo'])
 plt.xticks([0, 1, 2, 3], ['Angina típica', 'Angina atípica', 'Sin dolor de angina', 'Asintomático'])
 st.pyplot()
@@ -227,6 +227,7 @@ st.markdown('*⁃	Se interpretaron los datos mediante gráficas de barras, de pa
 st.markdown('*⁃	Se usó el método de “get dummies” para separar las variables categóricas.*')
 st.markdown('*⁃	Se hizo uso del método de Standard Scaler para expresar las variables numéricas con z-score. *')
 
+st.header('Conclusiones')
 st.markdown('En conclusión, la creación de este proyecto ha demostrado la utilidad de técnicas de análisis de datos y modelado predictivo para abordar problemas de salud, en particular, la prevención de enfermedades cardíacas. Se ha logrado desarrollar un modelo predictivo capaz de identificar a las personas con mayor riesgo de padecer problemas cardíacos, lo que puede ser una herramienta valiosa para los profesionales de la salud y las personas preocupadas por su bienestar cardiovascular.')
 st.markdown('El análisis exploratorio de reveló interesantes relaciones entre las variables y la presencia de enfermedades cardíacas, destacando la importancia de factores como la presión arterial, los niveles de colesterol y la edad en la predicción del riesgo cardiovascular.')
 st.markdown('En última instancia, este proyecto es una pequeña probada de la capacidad de la ciencia de datos para generar conocimientos significativos y aplicables en el campo de la salud y de cualquier otro, con el potencial de mejorar la calidad de vida y reducir la carga de enfermedades cardiovasculares en la sociedad.')
