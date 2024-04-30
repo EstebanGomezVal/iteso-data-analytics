@@ -158,7 +158,6 @@ ax.legend()
 st.pyplot(fig)
 
 st.markdown('Se puede observar como los pacientes con pendiente descendiente son en su mayoría pacientes sin problema cardíaco, mientras que los que poseen una pendiente constante son más probables a poseer un problema cardíaco.')
-st.markdown('Se puede observar como los pacientes con pendiente descendiente son en su mayoría pacientes sin problema cardíaco, mientras que los que poseen una pendiente constante son más probables a poseer un problema cardíaco.')
 
 st.header('Normalización de datos para una predicción')
 st.markdown('Se utilizaron varios métodos como get dummies y standard scaler con el fin de obtener una mejor predicción acerca de que tan probable es que una perosna adquiera o no un problema cardíaco')
